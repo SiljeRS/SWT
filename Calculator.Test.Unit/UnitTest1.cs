@@ -14,9 +14,9 @@ namespace CalculatorTestUnit
             uut = new Calculator();
         }
 
-        [TestCase(2.5,3.5,6)]
-        [TestCase(-1.5,1.5,0)]
-        [TestCase(-1,-1,-2)]
+        [TestCase(2.5, 3.5, 6)]
+        [TestCase(-1.5, 1.5, 0)]
+        [TestCase(-1, -1, -2)]
         public void TestAdd(double a, double b, double result)
         {
             // Arrange
@@ -25,7 +25,7 @@ namespace CalculatorTestUnit
 
             // Assert
 
-            Assert.That(uut.Add(a,b), Is.EqualTo(result));
+            Assert.That(uut.Add(a, b), Is.EqualTo(result));
         }
 
 
@@ -67,10 +67,23 @@ namespace CalculatorTestUnit
             // Arrange
 
             // Act
-
+           
             // Assert
 
             Assert.That(uut.Power(x, exp), Is.EqualTo(result));
+        }
+
+       
+        public void TestAccumulate()
+        {
+            // Arrange
+
+            // Act
+            uut.Power(2, 5);
+
+            // Assert
+
+            Assert.That(uut.Accumulator, Is.EqualTo(32));
         }
 
     }

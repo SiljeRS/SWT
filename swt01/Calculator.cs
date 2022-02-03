@@ -8,27 +8,35 @@ namespace SimpleCalculator
 {
     public class Calculator
     {
+        private double _result;
+        priavte 
+
         public double Add(double a, double b)
         {
-            return a + b;
-            //Hey
+            _result = a + b;
+            return _result;
         }
 
         public double Subtract(double a, double b)
         {
-            return a - b;
+            return _result = a - b;
         }
 
         public double Multiply(double a, double b)
         {
-            return a * b;
+            return _result = a * b;
         }
 
         public double Power(double x, double exp)
         {
-            return Math.Pow(x, exp);
+            return _result = Math.Pow(x, exp);
         }
 
-
+        public double Accumulator 
+        {
+            get => _result;
+            private set => _result = value;
+        }
+        public int MyProperty { get; private set; }
     }
 }
