@@ -73,5 +73,21 @@ namespace CalculatorTestUnit
             Assert.That(uut.Power(x, exp), Is.EqualTo(result));
         }
 
+
+        [TestCase(6, 2, 3)]
+        [TestCase(7, 0, 0)]
+        [TestCase(-1, 5, -0.2)]
+        [TestCase(1, -5, -0.2)]
+        public void TestDivide(double dividend, double divisor, double result)
+        {
+            // Arrange
+
+            // Act
+
+            // Assert
+
+            Assert.That(uut.Divide(dividend, divisor), Is.EqualTo(result));
+        }
+
     }
 }
