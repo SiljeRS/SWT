@@ -31,7 +31,6 @@ namespace SimpleCalculator
             return _result = Math.Pow(x, exp);
         }
 
-<<<<<<< HEAD
         public double Accumulator 
         {
             get => _result;
@@ -44,6 +43,5 @@ namespace SimpleCalculator
                 return 0;
             return dividend / divisor;
         }
->>>>>>> af9e32bfeb64b88602d6ce81e0eaea2f57642ca9
     }
 }
