@@ -32,17 +32,25 @@ namespace SimpleCalculator
             return _result = Math.Pow(x, exp);
         }
 
+<<<<<<< HEAD
         public double Accumulator 
         {
             get => _result;
             private set => _result = value;
         }
         public int MyProperty { get; private set; }
+
+        public bool Divide(double dividend, double divisor)
+        {
+            throw new NotImplementedException();
+        }
+=======
         public double Divide(double dividend, double divisor)
         {
             if (divisor == 0)
                 return 0;
             return dividend / divisor;
         }
+>>>>>>> af9e32bfeb64b88602d6ce81e0eaea2f57642ca9
     }
 }

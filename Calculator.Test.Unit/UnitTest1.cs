@@ -96,6 +96,7 @@ namespace CalculatorTestUnit
 
             // Act
             uut.Power(2, 5);
+            //Virker det?
 
             // Assert
 
