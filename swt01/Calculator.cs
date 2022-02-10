@@ -8,8 +8,7 @@ namespace SimpleCalculator
 {
     public class Calculator
     {
-        private double _result;
-        priavte 
+        private double _result; 
 
         public double Add(double a, double b)
         {
@@ -39,12 +38,6 @@ namespace SimpleCalculator
             private set => _result = value;
         }
         public int MyProperty { get; private set; }
-
-        public bool Divide(double dividend, double divisor)
-        {
-            throw new NotImplementedException();
-        }
-=======
         public double Divide(double dividend, double divisor)
         {
             if (divisor == 0)
