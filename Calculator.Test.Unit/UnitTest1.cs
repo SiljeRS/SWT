@@ -89,18 +89,19 @@ namespace CalculatorTestUnit
             Assert.That(uut.Divide(dividend, divisor), Is.EqualTo(result));
         }
 
-       
+       [Test]
         public void TestAccumulate()
         {
-            // Arrange
-
-            // Act
+           
+            // Test 1
             uut.Power(2, 5);
-            //Virker det?
-
-            // Assert
-
             Assert.That(uut.Accumulator, Is.EqualTo(32));
+
+            uut.Multiply(7, 2);
+            Assert.That(uut.Accumulator, Is.EqualTo(14));
+
+            uut.Add(10, 7);
+            Assert.That(uut.Accumulator, Is.EqualTo(17));
         }
 
     }
